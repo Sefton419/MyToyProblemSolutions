@@ -54,5 +54,3 @@ function alphaCount (alphabet, text) {
 
 
 };
-
-undefined
