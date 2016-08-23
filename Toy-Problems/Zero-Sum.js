@@ -12,7 +12,6 @@ function zeroSum (numbers) {
   // return your final answer.
 
   let copy = numbers.slice();
-
   let flag = false;
 
   function recurse (curr, array) {
