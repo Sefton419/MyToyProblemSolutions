@@ -8,8 +8,6 @@ Given an array of negative/positive integers, return true if there exists two nu
 */
 
 function zeroSum (numbers) {
-  // Write your code here, and
-  // return your final answer.
 
   let copy = numbers.slice();
   let flag = false;

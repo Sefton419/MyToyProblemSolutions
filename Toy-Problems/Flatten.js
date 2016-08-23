@@ -13,7 +13,7 @@ function flatten (array) {
   // recurse (arr)
   function recurse (arr) {
     // iterate through array
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       let val = arr[i];
       // if value is array
       if (Array.isArray(val)) {
