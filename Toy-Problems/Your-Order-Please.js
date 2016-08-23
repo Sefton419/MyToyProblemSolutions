@@ -20,9 +20,7 @@ function order(words) {
 	// create object for storing number as property and word as value
 	let orderObj= {};
 	let resultsArr = [];
-
 	// iterate through all letters of string
-
 	let j = 0;
 
 	for (let i = 0; i < string.length; i++) {
@@ -31,44 +29,15 @@ function order(words) {
 		if (!!Number(char)) {
 			orderObj[char] = wordsArr[j];
 			j++;
-			// orderArr.push(Number(char));
 		}
 	}
 
 	for (key in orderObj) {
-		results.push(orderObj[key])
+		resultsArr.push(orderObj[key]);
 	}
-
-	console.log('orderObj', orderObj);
-
-	/*
-	
-	console.log('orderArr', orderArr);
-
-	// iterate through orderArr
-
-	let x = 1;
-	let i = 0;
-
-	while (wordsArr.length > 0) {
-
-		if (orderArr[i] === x) {
-			let temp = wordsArr.splice(i, 1);
-			orderArr.splice(i, 1);
-			resultsArr.push(temp);
-			i = 0;
-			x++;
-		} else {
-			i++;
-		}
-	}
-
-	console.log('resultsArr', resultsArr);
-
-	*/
 
 	return resultsArr.join(' ');
-
+	
 };
 
 
