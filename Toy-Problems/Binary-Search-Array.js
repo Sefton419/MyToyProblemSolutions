@@ -16,17 +16,17 @@ Do NOT use Array.prototype.indexOf in your solution. What would be the fun in th
 
 function binarySearch (array, target) {
 
-  var objKeys = {};
+  let objKeys = {};
   array.forEach(function(value, index){
     objKeys[value] = index;
   })
 
-  var result = -1;
+  let result = -1;
 
   function recurse (array, target) {
 
-    var middleIndex = Math.ceil((array.length - 1)/2);
-    var middleValue = array[Math.ceil((array.length - 1)/2)];
+    let middleIndex = Math.ceil((array.length - 1)/2);
+    let middleValue = array[Math.ceil((array.length - 1)/2)];
 
     if (middleValue === target) {
         result = objKeys[middleValue];
@@ -38,10 +38,10 @@ function binarySearch (array, target) {
     }
 
     if (middleValue > target) {
-      var newArr = array.slice(0, middleIndex);
+      let newArr = array.slice(0, middleIndex);
       recurse(newArr, target);
     } else if (middleValue < target) {
-      var newArr = array.slice(middleIndex, (array.length));
+      let newArr = array.slice(middleIndex, (array.length));
       recurse(newArr, target);
     }
   }
