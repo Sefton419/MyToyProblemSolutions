@@ -23,7 +23,7 @@ function binarySearch (array, target) {
 
   let result = -1;
 
-  function recurse (array, target) {
+  function recurse (array, target) { 
 
     let middleIndex = Math.ceil((array.length - 1)/2);
     let middleValue = array[Math.ceil((array.length - 1)/2)];
@@ -34,7 +34,7 @@ function binarySearch (array, target) {
     }
 
     if (middleIndex === 0){
-      return
+      return;
     }
 
     if (middleValue > target) {
