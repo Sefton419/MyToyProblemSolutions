@@ -30,10 +30,11 @@ var lowestCommonAncestor = function(root, p, q) {
         // case 1: none of nodes are parent node and LCA
         // case 2: one of nodes is the parent node and LCA
     function createsAncestryArray (node, target, ancestors) {
-        if (node === null) {
-            return 'target could not be found';
-        }
         // if node.val is greater than target
+        if (node === null) {
+            ancestors.push(null);
+            return;
+        }
         if (node.val > target) {
             // recurse (node.left, target)
             createsAncestryArray(node.left, target, ancestors);
@@ -58,6 +59,18 @@ var lowestCommonAncestor = function(root, p, q) {
 
     let pANCESTORS = createsAncestryArray(root, p.val, []);
     let qANCESTORS = createsAncestryArray(root, q.val, []);
+
+    if (pANCESTORS[0] === null
+    && qANCESTORS[0] === null) {
+        return 'neither p nor q are present in binary search tree';
+    }
+    if (pANCESTORS[0] === null) {
+        console.log('I\'m in!!!!!!!!')
+        return 'p is not present in binary search tree';
+    }
+    if (qANCESTORS[0] === null) {
+        return 'q is not present in binary search tree';
+    }
 
     let longest;
     let shortest;
@@ -89,10 +102,6 @@ var lowestCommonAncestor = function(root, p, q) {
 
 
 };
-
-/*
-
-Test case:
 
 var tree = {
         val: 10,
@@ -145,6 +154,5 @@ var tree = {
 		} 
 };
 
-console.log((lowestCommonAncestor(tree, {val: 12}, {val: 16})).val);
+console.log(lowestCommonAncestor(tree, {val: 12}, {val: 1000}));
 
-*/
