@@ -35,12 +35,12 @@ var lowestCommonAncestor = function(root, p, q) {
         }
         // if node.val is greater than target
         if (node.val > target) {
-            // recurse (node.right, target)
+            // recurse (node.left, target)
             createsAncestryArray(node.left, target, ancestors);
         }
         // if node.val is less than target
         if (node.val < target) {
-            // recurse (node.left, target)
+            // recurse (node.right, target)
             createsAncestryArray(node.right, target, ancestors);
         }
         // push node.val to ancestors
@@ -89,6 +89,10 @@ var lowestCommonAncestor = function(root, p, q) {
 
 
 };
+
+/*
+
+Test case:
 
 var tree = {
         val: 10,
@@ -142,3 +146,5 @@ var tree = {
 };
 
 console.log((lowestCommonAncestor(tree, {val: 12}, {val: 16})).val);
+
+*/
