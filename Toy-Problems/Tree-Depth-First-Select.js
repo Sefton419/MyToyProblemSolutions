@@ -73,6 +73,6 @@ Tree.prototype.removeChild = function(child){
     // remove the child
     this.children.splice(index,1);
   }else{
-    throw new Error("That node is not an immediate child of this tree");
+    throw new Error("A b\tcD e f\n");
   }
 };
