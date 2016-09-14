@@ -1,3 +1,19 @@
+
+/* 
+
+Shallow Flatten
+
+Given an array of arrays, return all elements in a single array. Nested arrays will be at most one level deep, meaning 
+[1, [2, 3], 4, [5], 6]
+
+and not
+
+[[[1],[2], [3]]]
+
+Hint: Use Array.isArray(elem) to see if something is an array.
+
+*/
+
 function flatten (array) {
   // Write your code here, and
   // return your final answer.
