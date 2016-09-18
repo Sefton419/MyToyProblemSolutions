@@ -19,7 +19,6 @@ function characterFrequency (string) {
     for (var i = 1; i < array.length; i++) {
       var curr = array[i];
       var prev = array[i - 1];
-      console.log('curr: ', curr)
       if (curr[1] > prev[1]) {
         for (var j = i-1; i >= -1; j--) {
           var trial = array[j];
