@@ -25,7 +25,6 @@ function insertionSort (array) {
     for (var i = 1; i < array.length; i++) {
       var curr = array[i];
       var prev = array[i - 1];
-      console.log('curr: ', curr)
 
       if (curr.value < prev.value) {
       	
