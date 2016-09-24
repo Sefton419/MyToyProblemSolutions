@@ -37,7 +37,7 @@ function nestedWordCount (wordList) {
 			currentIndex = 0;
 		} else {
 			// if a is not the same index of b
-			if (trialIndex !== currentIndex) {
+			if (trialIndex !== currentIndex && wordOnTrial.length >= currentWord.length) {
 				// compare wordOnTrial with currentWord
 				if (wordOnTrial.includes(currentWord)) {
 					// increment tally
