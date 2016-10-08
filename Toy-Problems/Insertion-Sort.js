@@ -26,10 +26,10 @@ function insertionSort (array) {
     let curr = array[i];
     let prev = array[i - 1];
 
-    if (curr < prev) {
+    if (curr.value < prev.value) {
       for (let j = i-1; i >= -1; j--) {
         let trial = array[j];
-        if (trial > curr) {
+        if (trial.value > curr.value) {
           let temp = array.splice(i, 1)[0];
           array.splice(j, 0, temp);
           i = 0;
