@@ -103,7 +103,7 @@ function playPass(s, n) {
       if (char == Number(char)) {
         return 9 - char;
       }
-      // order order number of char by alphabetAsKeys
+      // order number of char by alphabetAsKeys
       let order = alphabetAsKeys[char.toUpperCase()];
       // add n to order
       order = order + n;
