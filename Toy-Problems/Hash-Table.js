@@ -18,9 +18,6 @@ HashTable.prototype.insert = function(k, v){
     let bucket = [];
     bucket.push(tuple);
     this._storage.set(i, bucket);
-    this._storage.each(function(v, i, a){
-      console.log(a[i])
-    })
   }
 };
 
