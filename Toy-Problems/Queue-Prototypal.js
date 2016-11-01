@@ -3,7 +3,7 @@
 
 Queue - Prototypal
 
-implement a queue using an object with numberic keys in the prototypal style.
+implement a queue using an object with numeric keys in the prototypal style.
 
 */
 

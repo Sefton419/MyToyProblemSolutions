@@ -3,7 +3,7 @@
 
 Queue - Functional Shared
 
-implement a queue using an object with numberic keys in the functional shared style.
+implement a queue using an object with numeric keys in the functional shared style.
 
 */
 

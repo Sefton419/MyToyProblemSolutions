@@ -2,7 +2,7 @@
 
 Stack - Functional
 
-implement a stack using an object with numberic keys in the functional style.
+implement a stack using an object with numeric keys in the functional style.
 
 */
 

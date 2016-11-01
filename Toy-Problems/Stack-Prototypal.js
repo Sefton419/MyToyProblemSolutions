@@ -3,7 +3,7 @@
 
 Stack - Prototypal
 
-implement a stack using an object with numberic keys in the prototypal style.
+implement a stack using an object with numeric keys in the prototypal style.
 
 */
 

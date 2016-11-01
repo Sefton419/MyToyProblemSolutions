@@ -3,7 +3,7 @@
 
 Queue - Functional
 
-implement a queue using an object with numberic keys in the functional style.
+implement a queue using an object with numeric keys in the functional style.
 
 */
 
