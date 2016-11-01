@@ -3,7 +3,7 @@
 
 Stack - Functional Shared
 
-implement a stack using an object with numberical keys in the functional shared style.
+implement a stack using an object with numberic keys in the functional shared style.
 
 */
 
