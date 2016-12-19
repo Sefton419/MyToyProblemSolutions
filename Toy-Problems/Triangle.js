@@ -9,5 +9,13 @@ For example, given the following triangle
 
 
 var minimumTotal = function(triangle) {
-
+  let copy = triangle.splice('')
+  let paths = [];
+  let left, right;
+  let recurse = (tri) => {
+    if () {
+      
+    }
+  }
+  recurse(copy)
 };
