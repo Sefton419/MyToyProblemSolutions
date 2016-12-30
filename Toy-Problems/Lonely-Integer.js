@@ -15,8 +15,7 @@ OUTPUT: number
 */
 
 function processData(input) {
-    let arr = input.split(' ');
-    let array = arr.map((char, index) => {
+    const array = input.split(' ').map((char, index) => {
         if (index === 0) {
             let miniSplit = char.split('\n');
             return Number(miniSplit.pop());
