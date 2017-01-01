@@ -13,21 +13,21 @@ Given an array of socks, with each sock given a number representing it's color, 
 
 
 function main(array) {
-  let pairsObj = array.reduce((prev, curr) => {
-    if (prev[curr] === undefined) {
-        prev[curr] = 1;
+  let pairsObj = array.reduce((obj, curr) => {
+    if (obj[curr] === undefined) {
+        obj[curr] = 1;
     } else {
-        prev[curr]++;
+        obj[curr]++;
     }
-    return prev;
+    return obj;
   }, {});
-  return Object.keys(pairsObj).reduce((prev, key) => {
+  return Object.keys(pairsObj).reduce((num, key) => {
     let curr = pairsObj[key];
     if (curr % 2 === 0) {
-      prev += curr/2;
+      num += curr/2;
     } else {
-      prev += (curr-1)/2
+      num += (curr-1)/2
     }
-    return prev;
+    return num;
   }, 0);
 }
