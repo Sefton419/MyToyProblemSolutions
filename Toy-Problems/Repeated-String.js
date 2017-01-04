@@ -12,7 +12,7 @@ Given an integer find and print the number of letter a's in the first letters of
 
 function repeatedString(s, n) {
   const strLength = s.length;
-  const strArray = s.split('')
+  const strArray = s.split('');
   const letter_a_count = strArray.reduce((count, curr) => {
     if (curr === 'a') {
       count++;
@@ -21,7 +21,7 @@ function repeatedString(s, n) {
   }, 0);
   const fullRevolutions = Math.floor(n/strLength);
   const leftoverIndex = (n % strLength) - 1;
-  const last_pass_a_count = s.split('').reduce((count, curr, currIndex) => {
+  const last_pass_a_count = strArray.reduce((count, curr, currIndex) => {
     if (curr !== 'a') {
       return count;
     }
