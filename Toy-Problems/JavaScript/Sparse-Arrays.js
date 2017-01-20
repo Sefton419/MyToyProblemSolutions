@@ -47,7 +47,9 @@ function processData(input) {
             obj[curr] = 1;
         }
         return obj;
-    }, {});  
+    }, {}); 
+
+    // create array of the results for each query 
     const queries = queryStrings.map( key => {
         let curr = archive[key];
         if (curr === undefined) {
@@ -56,6 +58,8 @@ function processData(input) {
             return curr;
         }                      
     });
+
+    // prepare result as a string seperated by '\n'
     const result = queries.reduce((result, curr) => {
         return`${result}\n${curr}`;
     });
