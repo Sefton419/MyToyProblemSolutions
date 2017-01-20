@@ -4,7 +4,7 @@
 Array: Left Rotation
 HackerRank
 
-A left rotation operation on an array of size n shifts each of the array's elements k unit to the left. For example, if left rotations are performed on array [1,2,3,4,5], then the array would become [3,4,5,1,2].
+A left rotation operation on an array of size n shifts each of the array's elements k units to the left. For example, if left rotations are performed on array [1,2,3,4,5], then the array would become [3,4,5,1,2].
 
 Given an array of integers and a number, k, perform k left rotations on the array. Then print the updated array as a single line of space-separated integers.
 
